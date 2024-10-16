@@ -1,0 +1,20 @@
+.admin-trigger {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .admin-trigger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2563eb;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .admin-trigger:hover::after {
+    transform: scaleX(1);
+  }
